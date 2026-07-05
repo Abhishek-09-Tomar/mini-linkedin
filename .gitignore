@@ -1,7 +1,25 @@
-@"
+# Dependencies
 node_modules/
+backend/node_modules/
+frontend/node_modules/
+
+# Environment files
 .env
+backend/.env
+frontend/.env
+
+# OS files
 .DS_Store
-dist/
+
+# Build files
+frontend/dist/
+backend/dist/
 build/
-"@ > .gitignore
+
+# Uploaded files - ignore actual user uploads
+backend/uploads/posts/*
+backend/uploads/profiles/*
+
+# Keep empty upload folders
+!backend/uploads/posts/.gitkeep
+!backend/uploads/profiles/.gitkeep
